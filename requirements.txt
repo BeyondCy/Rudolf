@@ -1,0 +1,6 @@
+python-magic
+ssdeep
+yara-python
+requests
+paramiko
+pexpect

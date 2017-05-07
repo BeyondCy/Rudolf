@@ -1,0 +1,58 @@
+[rudolf]
+Result_Path = result/
+
+[basic]
+UPX_Path = utils/upx
+PackerSign_Path = data/packer.yar
+
+[static]
+Yara_Scan = True,
+Yara_Uncompiled_Rules = data/yara_uncompiled_rules/
+Yara_Compiled_Rules = data/yara_compiled_rules/
+Virustotal_Scan = True
+Virustotal_Apikey = 
+
+[dynamic]
+Timeout = 30
+
+
+# qemu config
+#Config for x86 Linux VM
+[qemu-x86-1]
+macaddr=00:11:22:33:44:60
+ip = 192.168.187.170
+port = 22
+user = root
+password = root
+
+#Config for x86-64 Linux VM
+[qemu-x86-64-1]
+macaddr=00:11:22:33:44:62
+ip=192.168.187.173
+user = root
+password = root
+port = 22
+
+#Config for ARM Linux VM
+[qemu-arm-1]
+macaddr=00:11:22:33:44:55
+ip = 192.168.187.169
+port = 22
+user = root
+password = root
+
+#Config for MIPS Linux VM
+[qemu-mips-1]
+ip=192.168.187.171
+user=root
+password=root
+macaddr=00:11:22:33:44:66
+port=22
+
+#Config for MIPSEL Linux VM
+[qemu-mipsel-1]
+ip=192.168.187.172
+user=root
+password=root
+macaddr=00:11:22:33:44:67
+port=22
